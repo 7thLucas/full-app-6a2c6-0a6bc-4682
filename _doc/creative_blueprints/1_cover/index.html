@@ -1,0 +1,67 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-text-col { width: 52%; }
+  .mode-landscape .sl-image-col { width: 48%; display: flex; }
+  .mode-portrait .sl-text-col { width: 100%; }
+  .mode-portrait .sl-image-col { display: none; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Text Column -->
+    <div class="sl-text-col flex flex-col justify-between p-12">
+      <div>
+        <span class="inline-block bg-teal-100 text-teal-700 text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-full mb-8">Pharmacy Operations Management</span>
+        <h1 class="text-5xl font-black text-slate-900 leading-tight mb-5">
+          Drug Inventory &amp;<br/>Prescription Control,<br/><span class="text-teal-600">Finally Solved.</span>
+        </h1>
+        <p class="text-base text-slate-500 leading-relaxed max-w-sm">
+          The operational command center for pharmacy owners — track every drug batch, prevent expired stock, and maintain a flawless prescription record.
+        </p>
+        <div class="flex items-center gap-5 mt-8">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-teal-500"></span>
+            <span class="text-xs text-slate-400 font-medium">Inventory Tracking</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-teal-500"></span>
+            <span class="text-xs text-slate-400 font-medium">Expiry Alerts</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-teal-500"></span>
+            <span class="text-xs text-slate-400 font-medium">Prescription Records</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Image Column -->
+    <div class="sl-image-col relative overflow-hidden bg-teal-50">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=modern+clean+pharmacy+interior+organized+white+medicine+shelves+bottles+professional+healthcare+teal+lighting+clinical+precision"
+        alt="Modern pharmacy interior"
+        class="w-full h-full object-cover"
+      />
+      <!-- Overlay stat chips -->
+      <div class="absolute bottom-8 right-6 flex flex-col gap-2">
+        <div class="bg-white rounded-xl px-4 py-2.5 flex items-center gap-2.5 shadow-md">
+          <span class="text-lg">💊</span>
+          <span class="text-xs font-bold text-slate-800">Zero surprise expirations</span>
+        </div>
+        <div class="bg-white rounded-xl px-4 py-2.5 flex items-center gap-2.5 shadow-md">
+          <span class="text-lg">📋</span>
+          <span class="text-xs font-bold text-slate-800">Every prescription on record</span>
+        </div>
+        <div class="bg-teal-600 rounded-xl px-4 py-2.5 flex items-center gap-2.5 shadow-md">
+          <span class="text-lg">✅</span>
+          <span class="text-xs font-bold text-white">Accurate dispensing, every time</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
